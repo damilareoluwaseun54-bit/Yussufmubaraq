@@ -2,526 +2,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic and research portfolio of Yussuf Mubaraq Damilare, a biomedical researcher interested in diabetes, molecular medicine, and translational research.">
-  <title>Yussuf Mubaraq Damilare | Biomedical Researcher</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
-      color: #263247;
-      line-height: 1.7;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .navbar {
-      background: #10243b;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: #e1e9f3;
-      font-size: 14px;
-    }
-
-    .nav-links a:hover {
-      color: #64d8c5;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #10243b, #17566a);
-      color: white;
-      padding: 90px 8%;
-      text-align: center;
-    }
-
-    .hero .eyebrow {
-      color: #70e0cb;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .hero h1 {
-      font-size: clamp(34px, 7vw, 58px);
-      line-height: 1.2;
-      margin: 18px 0;
-    }
-
-    .hero p {
-      max-width: 720px;
-      margin: 0 auto 28px;
-      color: #e3edf4;
-      font-size: 17px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 23px;
-      border-radius: 6px;
-      background: #64d8c5;
-      color: #10243b;
-      font-weight: bold;
-      margin: 5px;
-    }
-
-    .button-outline {
-      background: transparent;
-      border: 1px solid white;
-      color: white;
-    }
-
-    .container {
-      max-width: 1050px;
-      margin: auto;
-      padding: 55px 22px;
-    }
-
-    .section-title {
-      color: #123e56;
-      font-size: 29px;
-      margin-bottom: 12px;
-    }
-
-    .section-intro {
-      color: #617086;
-      margin-bottom: 25px;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 27px;
-      box-shadow: 0 5px 22px rgba(22, 45, 70, 0.06);
-      margin-bottom: 20px;
-    }
-
-    .card h3 {
-      color: #17617a;
-      margin-bottom: 10px;
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .tag {
-      background: #e5f4f3;
-      color: #155767;
-      padding: 7px 12px;
-      border-radius: 20px;
-      font-size: 13px;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .research-card {
-      border-top: 4px solid #38b7a6;
-    }
-
-    .research-card p,
-    .card p {
-      color: #58677a;
-    }
-
-    .timeline {
-      border-left: 3px solid #38b7a6;
-      padding-left: 22px;
-      margin: 25px 0;
-    }
-
-    .timeline-item {
-      margin-bottom: 28px;
-    }
-
-    .timeline-item h3 {
-      color: #164a63;
-    }
-
-    .small-label {
-      font-size: 13px;
-      color: #168675;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    .contact {
-      background: #10243b;
-      color: white;
-      border-radius: 14px;
-      padding: 35px;
-    }
-
-    .contact h2 {
-      margin-bottom: 12px;
-    }
-
-    .contact p {
-      color: #d8e4ee;
-      margin-bottom: 14px;
-    }
-
-    .contact a:not(.button) {
-      color: #70e0cb;
-      overflow-wrap: anywhere;
-    }
-
-    footer {
-      background: #0b1929;
-      color: #b8c7d5;
-      padding: 25px 15px;
-      text-align: center;
-      font-size: 13px;
-    }
-
-    @media (max-width: 700px) {
-      .navbar {
-        justify-content: center;
-      }
-
-      .nav-links {
-        justify-content: center;
-        gap: 12px;
-      }
-
-      .hero {
-        padding: 65px 22px;
-      }
-
-      .about-grid,
-      .research-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .container {
-        padding: 40px 18px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic portfolio of Yussuf Mubaraq Damilare, a biomedical researcher focused on diabetes, oxidative stress, translational medicine and drug development.">
+<title>Yussuf Mubaraq Damilare | Biomedical Researcher</title>
+<style>
+:root {
+  --navy:#102a43;
+  --navy2:#173f5f;
+  --teal:#43c6b5;
+  --pale:#eaf7f5;
+  --ink:#243746;
+  --muted:#617384;
+  --paper:#f7f9fc;
+  --white:#ffffff;
+  --line:#e0e8ef;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:#087f8c;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:white;position:relative}
+nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 0;flex-wrap:wrap}
+.brand{font-size:17px;font-weight:800;letter-spacing:.3px;color:white}
+.navlinks{display:flex;gap:17px;flex-wrap:wrap;font-size:13px}
+.navlinks a{color:#e1f3f6}
+.hero{padding:70px 0 78px;background:linear-gradient(125deg,#102a43,#173f5f 72%,#146b72)}
+.hero-grid{display:grid;grid-template-columns:1.5fr .7fr;align-items:center;gap:38px}
+.eyebrow{color:var(--teal);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(36px,6vw,62px);line-height:1.1;letter-spacing:-1.8px;margin:15px 0;color:white}
+.hero p{color:#dce9f2;font-size:17px;max-width:690px}
+.hero strong{color:white}
+.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:20px;padding:28px;text-align:center}
+.monogram{width:116px;height:116px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;background:var(--teal);color:var(--navy);font-size:38px;font-weight:900;border:5px solid #ffffff45}
+.hero-card h3{margin:8px 0;color:white}
+.hero-card p{font-size:13px;margin:5px 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;font-weight:800;font-size:14px;background:var(--teal);color:#092f3b}
+.btn:hover{background:#80e4d8;text-decoration:none}
+.btn-outline{background:transparent;color:white;border:1px solid #ffffff70}
+.btn-light{background:white;color:var(--navy)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px;max-width:520px}
+.metric{border-left:3px solid var(--teal);padding-left:12px}
+.metric b{display:block;font-size:23px;color:white}
+.metric span{font-size:12px;color:#c8dce9}
+section{padding:68px 0}
+section:nth-of-type(even){background:white}
+.section-head{margin-bottom:30px}
+.kicker{color:#087f8c;font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:clamp(27px,4vw,37px);line-height:1.2;color:var(--navy);margin:6px 0 10px;letter-spacing:-.6px}
+.lead{max-width:780px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:white;border:1px solid var(--line);border-radius:14px;padding:23px;box-shadow:0 5px 20px #102a4308}
+section:nth-of-type(even) .card{background:var(--paper)}
+.card h3{color:var(--navy);margin:0 0 5px;font-size:18px}
+.card p{margin:7px 0}
+.meta{font-size:13px;color:var(--muted)}
+.taglist{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.tag{font-size:12px;padding:6px 11px;border-radius:30px;background:var(--pale);color:#11675f;font-weight:700}
+.timeline{border-left:2px solid #c4e9e4;margin-left:7px;padding-left:24px;display:grid;gap:22px}
+.timeline-item{position:relative}
+.timeline-item:before{content:"";position:absolute;left:-31px;top:9px;width:11px;height:11px;border-radius:50%;background:var(--teal);border:3px solid white;box-shadow:0 0 0 1px #a9dcd5}
+.timeline-item h3{margin:0;color:var(--navy);font-size:18px}
+.timeline-item .meta{margin-bottom:6px}
+.pub-group{margin:30px 0 14px;color:#087f8c;font-size:14px;text-transform:uppercase;letter-spacing:1.2px}
+.pub-list{display:grid;gap:12px}
+.pub{padding:18px 20px;background:white;border:1px solid var(--line);border-radius:11px}
+.pub h3{font-size:15px;line-height:1.5;margin:0 0 7px;color:var(--navy)}
+.pub p{margin:4px 0;font-size:13px;color:var(--muted)}
+.pub .doi{font-size:13px;font-weight:700}
+ul.clean{padding-left:19px;margin:8px 0}
+ul.clean li{margin:6px 0}
+.contact-panel{background:var(--navy);border-radius:18px;padding:34px;color:white}
+.contact-panel h2{color:white}
+.contact-panel p{color:#d7e5ee}
+.contact-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.contact-link{padding:14px;border:1px solid #ffffff35;border-radius:9px;color:white;overflow-wrap:anywhere}
+.contact-link small{display:block;color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:1px}
+footer{background:#0b2032;color:#b9cbd8;text-align:center;padding:25px;font-size:12px}
+@media(max-width:720px){
+ .hero-grid,.grid{grid-template-columns:1fr}
+ .hero{padding:48px 0}
+ .hero-card{max-width:360px}
+ .navlinks{gap:11px}
+ .contact-links{grid-template-columns:1fr}
+ section{padding:48px 0}
+ .metrics{gap:8px}
+}
+</style>
 </head>
-
 <body>
-
-  <nav class="navbar">
-    <a class="logo" href="#home">YM Damilare</a>
-
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#education">Education</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </div>
+<header id="top">
+ <div class="wrap">
+  <nav>
+   <a class="brand" href="#top">YMD <span style="color:#43c6b5">/</span> RESEARCH</a>
+   <div class="navlinks">
+    <a href="#about">About</a><a href="#research">Research</a>
+    <a href="#education">Education</a><a href="#publications">Publications</a>
+    <a href="#experience">Experience</a><a href="#contact">Contact</a>
+   </div>
   </nav>
+ </div>
+ <div class="hero">
+  <div class="wrap hero-grid">
+   <div>
+    <div class="eyebrow">Biomedical Research · Translational Medicine</div>
+    <h1>Yussuf Mubaraq<br>Damilare</h1>
+    <p>Investigating the biology of disease and advancing research toward better therapeutic strategies, with a particular interest in <strong>diabetes, oxidative stress, medicinal-plant pharmacology and drug delivery.</strong></p>
+    <div class="actions">
+     <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download Academic CV ↓</a>
+     <a class="btn btn-outline" href="#research">Explore My Research</a>
+     <a class="btn btn-outline" href="#contact">Let's Connect</a>
+    </div>
+    <div class="metrics">
+     <div class="metric"><b>16</b><span>Listed publications</span></div>
+     <div class="metric"><b>MSc</b><span>Drug Research & Development</span></div>
+     <div class="metric"><b>Diabetes</b><span>Core research interest</span></div>
+    </div>
+   </div>
+   <div class="hero-card">
+    <div class="monogram">YMD</div>
+    <h3>Researcher Profile</h3>
+    <p>Biochemistry · Drug Development</p>
+    <p>Translational & Molecular Medicine</p>
+    <p>Lagos, Nigeria</p>
+    <p style="margin-top:16px"><a style="color:#8de8dc" href="https://orcid.org/0009-0004-3105-7250" target="_blank" rel="noopener">View ORCID Profile ↗</a></p>
+   </div>
+  </div>
+ </div>
+</header>
 
-  <header class="hero" id="home">
-    <div class="eyebrow">Biomedical Research · Molecular Medicine</div>
+<main>
+<section id="about">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">01 / About</div><h2>From laboratory findings to human health</h2></div>
+  <p class="lead">I am an emerging translational medicine researcher bridging bench-level biochemistry and clinical application. My MSc thesis investigated oxidative stress biomarkers and histopathological outcomes in a diet-chemical-induced Type 2 diabetes rat model. My research background spans molecular toxicology, medicinal-plant pharmacology and nanomedicine drug delivery, complemented by practical experience in clinical diagnostics and blood-transfusion laboratory procedures.</p>
+  <p class="lead">I aim to extend this bench-to-bedside trajectory through doctoral research focused on metabolic disease, biomarker discovery and innovative therapeutic strategies for chronic disease management.</p>
+ </div>
+</section>
 
-    <h1>Yussuf Mubaraq Damilare</h1>
+<section id="research">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">02 / Research</div><h2>Research interests</h2><p class="lead">Scientific questions that connect molecular mechanisms, therapeutic discovery and disease outcomes.</p></div>
+  <div class="grid">
+   <article class="card"><h3>Diabetes & Metabolic Disease</h3><p>Investigating mechanisms of diabetes, glycaemic regulation, diabetic complications and potential therapeutic interventions.</p></article>
+   <article class="card"><h3>Oxidative Stress & Biomarkers</h3><p>Exploring antioxidant responses, oxidative injury and biomarkers that can help explain disease progression and therapeutic effects.</p></article>
+   <article class="card"><h3>Medicinal Plants & Phytochemistry</h3><p>Examining bioactive plant-derived compounds, pharmacological activity and their potential role in drug discovery.</p></article>
+   <article class="card"><h3>Nanomedicine & Drug Delivery</h3><p>Exploring nanotechnology, peptide hydrogels and biomaterial systems for targeted or sustained therapeutic delivery.</p></article>
+   <article class="card"><h3>Translational & Precision Medicine</h3><p>Connecting experimental findings with clinical relevance, chronic disease management and more tailored therapeutic approaches.</p></article>
+   <article class="card"><h3>Molecular Toxicology & Drug Discovery</h3><p>Investigating toxicological mechanisms, therapeutic targets and the development of potential interventions.</p></article>
+  </div>
+  <div class="taglist"><span class="tag">Biochemistry</span><span class="tag">Drug Development</span><span class="tag">Histopathology</span><span class="tag">Pharmacology</span><span class="tag">Inflammation</span><span class="tag">Biomaterials</span><span class="tag">Precision Medicine</span></div>
+ </div>
+</section>
 
-    <p>
-      Exploring the molecular mechanisms of diabetes,
-      inflammation and chronic diseases to advance
-      translational research and improve human health.
-    </p>
+<section id="education">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">03 / Education</div><h2>Academic background</h2></div>
+  <div class="timeline">
+   <div class="timeline-item">
+    <h3>M.Sc. Drug Research and Development</h3>
+    <div class="meta">University of Lagos, Nigeria · Nov 2024 – Dec 2025</div>
+    <p>Hybrid programme with online coursework and on-campus laboratory research and thesis.</p>
+    <p><strong>Thesis:</strong> “Effect of RAGV (1:1) extract on oxidative stress biomarkers and histopathological alterations in a Fructose–STZ induced Type 2 Diabetes rat model.”</p>
+    <p>Investigated antioxidant and tissue-protective effects of a combined plant-extract regimen in an induced-diabetes rodent model, generating biomarker and histopathology data relevant to translational diabetes therapeutics.</p>
+   </div>
+   <div class="timeline-item">
+    <h3>B.Sc. (Hons) Biochemistry</h3>
+    <div class="meta">Lagos State University, Nigeria · Nov 2016 – Sep 2021</div>
+    <p><strong>Thesis:</strong> “Hypoglycemic and Antioxidant Activities of Carica papaya Leaf Extracts.”</p>
+    <p>Evaluated the hypoglycemic and antioxidant potential of C. papaya leaf extracts. This research trajectory connects my undergraduate work on medicinal plants with my later investigation of oxidative stress in experimental diabetes.</p>
+    <p><strong>Relevant coursework:</strong> Experimental Biochemistry, Advanced Enzymology, Membrane Biochemistry, Microbial Biochemistry, Plant Biochemistry, Protein Chemistry, Clinical Biochemistry, Forensic Biochemistry, Genetic Engineering, Immunology and Biochemical Pharmacology.</p>
+   </div>
+  </div>
+ </div>
+</section>
 
-    <a class="button" href="#research">Explore My Research</a>
-    <a class="button button-outline" href="#contact">Get in Touch</a>
-  </header>
-  <a class="button" href="cv.pdf" target="_blank" rel="noopener">
-  Download My Academic CV ↓
-  </a>
+<section id="publications">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">04 / Publications</div><h2>Research and scholarly contributions</h2><p class="lead">Selected bibliographic information below is reproduced from my supplied academic CV. DOI links are included where provided.</p>
+  <div class="actions">
+   <a class="btn" href="https://scholar.google.com/citations?user=5dHjh2EAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+   <a class="btn btn-light" href="https://orcid.org/0009-0004-3105-7250" target="_blank" rel="noopener">ORCID ↗</a>
+  </div></div>
 
-  <main>
+  <h3 class="pub-group">First-author publications</h3>
+  <div class="pub-list">
+   <article class="pub"><h3>1. Nanotechnology in Diabetes Management: Advances in Diagnostics, Drug Delivery, and Therapeutic Applications</h3><p>Yussuf, M.D. et al. (2025). <em>European Journal of Scientific Research and Reviews</em>, 2(2), 78–98.</p><a class="doi" href="https://doi.org/10.5455/EJSRR.20250108014459" target="_blank" rel="noopener">DOI: 10.5455/EJSRR.20250108014459 ↗</a></article>
+   <article class="pub"><h3>2. Medicinal Uses, Prevalence, and Mechanism of Action of Nigerian Plants with Psychoactive Properties</h3><p>Yussuf, M.D. et al. (2025). <em>Journal of Research in Complementary Medicine</em>, 2(2), 26–42.</p><a class="doi" href="https://doi.org/10.5455/JRCM.20250113095500" target="_blank" rel="noopener">DOI: 10.5455/JRCM.20250113095500 ↗</a></article>
+   <article class="pub"><h3>3. The Interplay of Apoptosis, Angiogenesis, and Metastasis in Cancer Pathogenesis</h3><p>Yussuf, M.D. et al. (2025). <em>Journal of Cancer Research and Reviews</em>, 2(2), 37.</p></article>
+   <article class="pub"><h3>4. Biodegradable Peptide Hydrogels for Precision Drug Release: Advances and Future Perspectives</h3><p>Yussuf, M.D. et al. (2025). <em>European Journal of Scientific Research and Reviews</em>, 2(3), 130.</p></article>
+   <article class="pub"><h3>5. Peptide Hydrogels as Biocompatible Carriers for Sustained Antibiotic Release Against Multidrug-Resistant Infections</h3><p>Yussuf, M.D. et al. (2025). <em>European Journal of Scientific Research and Reviews</em>, 2(3), 154.</p></article>
+   <article class="pub"><h3>6. Drosophila melanogaster and its Genetic Tools as a Model in Neurological Disorder Research</h3><p>Yussuf, M.D. et al. (2025). <em>European Journal of Scientific Research and Reviews</em>.</p></article>
+   <article class="pub"><h3>7. The Role of Hormones in the Onset and Progression of Endocrine and Gynaecological Cancers</h3><p>Yussuf, M.D. et al. (2025). <em>International Journal of Advanced Biology and Biomedical Research</em>, 13(5), 573–603.</p><a class="doi" href="https://doi.org/10.48309/IJABBR.2025.2056347.1585" target="_blank" rel="noopener">DOI: 10.48309/IJABBR.2025.2056347.1585 ↗</a></article>
+   <article class="pub"><h3>8. Lipophilic Vitamins (D and E) and Flavonoids (Quercetin and Naringin) Attenuate the Effects of Dichlorvos Toxicity on Catalase Activity</h3><p>Yussuf, M.D. et al. (2024). <em>International Journal of Advanced Biological and Biomedical Research</em>, 12, 67.</p></article>
+  </div>
 
-    <section class="container" id="about">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-intro">
-        My academic background, research interests and vision.
-      </p>
+  <h3 class="pub-group">Co-authored publications</h3>
+  <div class="pub-list">
+   <article class="pub"><h3>9. Statistical Evaluation of Structure-Activity Relationships (SAR) in Antimalarial Drug Development: A Medicinal Chemistry Perspective</h3><p>Izah, C.N. et al., including Yussuf, M.D. (2025). <em>European Journal of Scientific Research and Reviews</em>, 3(2), 128.</p></article>
+   <article class="pub"><h3>10. Advances in Translational Immunotherapy for Autoimmune Diseases: From Target Discovery to Patient-Specific Therapies</h3><p>Kokelu, A.N. et al., including Yussuf, M.D. (2025). <em>European Journal of Scientific Research and Reviews</em>, 3(4), 240.</p></article>
+   <article class="pub"><h3>11. Green Chemistry in Pharmaceutical Synthesis: Implications for Sustainable Public Health</h3><p>Ojukwu, U.C. et al., including Yussuf, M.D. (2025). <em>European Journal of Scientific Research and Reviews</em>, 3(1), 1.</p></article>
+   <article class="pub"><h3>12. Precision Medicine in Chronic Disease Prevention and Management</h3><p>Kokelu, A.N. et al., including Yussuf, M.D. (2025). <em>Journal of Medical Research and Reviews</em>, 4(1), 28.</p></article>
+   <article class="pub"><h3>13. A Review on Inflammation and Cardiovascular Diseases: What Is New?</h3><p>Omiyale, O.C. et al., including Yussuf, M.D. (2025). <em>European Journal of Scientific Research and Reviews</em>, 2(1), 23.</p><a class="doi" href="https://doi.org/10.5455/EJSRR.20240602093947" target="_blank" rel="noopener">DOI: 10.5455/EJSRR.20240602093947 ↗</a></article>
+   <article class="pub"><h3>14. Hypoglycemic and Antioxidant Activities of Carica papaya Leaves</h3><p>Omiyale, O.C. et al., including Yussuf, M.D. (2024). <em>International Journal of Advanced Biological and Biomedical Research</em>, 12, 141–154.</p></article>
+   <article class="pub"><h3>15. Effects of Jicama (Pachyrhizus erosus)-Based Oral Rehydration Solution on Intestinal Alkaline Phosphatase in Diarrhoeagenic Rats</h3><p>Omiyale, O.C., Yussuf, M.D. et al. (2024). <em>International Journal of Advanced Biological and Biomedical Research</em>, 12(2), 16–25.</p><a class="doi" href="https://doi.org/10.48309/IJABBR.2024.2017216.1472" target="_blank" rel="noopener">DOI: 10.48309/IJABBR.2024.2017216.1472 ↗</a></article>
+   <article class="pub"><h3>16. Phytochemical Profile and Antioxidant Properties of Extracts from Sargassum flutans</h3><p>Charles, O.O. et al., including Damilare, Y.M. (2023). <em>International Journal of Advanced Biological and Biomedical Research</em>, 11(4), 261–276.</p></article>
+  </div>
+  <p class="meta" style="margin-top:18px">For complete author lists and the latest bibliographic records, please consult the linked Google Scholar and ORCID profiles.</p>
+ </div>
+</section>
 
-      <div class="about-grid">
-        <div class="card">
-          <h3>My Research Journey</h3>
+<section id="experience">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">05 / Experience</div><h2>Research, laboratory & teaching</h2></div>
+  <div class="timeline">
+   <div class="timeline-item"><h3>Laboratory Analyst</h3><div class="meta">Lagos Island General Hospital · May 2024 – Present</div><ul class="clean"><li>Perform diagnostic testing across haematology, chemistry and microbiology using laboratory instruments and quality-control protocols.</li><li>Document and communicate findings to clinicians to support diagnosis and treatment planning.</li><li>Maintain infection-control, specimen-integrity and biohazard procedures in a clinical laboratory.</li></ul></div>
+   <div class="timeline-item"><h3>Laboratory Analyst Intern</h3><div class="meta">Lagos State Blood Transfusion Centre · Jan 2023 – Mar 2024</div><ul class="clean"><li>Conducted blood cross-matching, antibody screening and ABO/Rhesus typing.</li><li>Performed serological testing for human retroviruses and hepatitis B and C.</li><li>Maintained laboratory records and specimen logs in line with blood-bank protocols.</li></ul></div>
+   <div class="timeline-item"><h3>Science Teacher — Chemistry & Biology</h3><div class="meta">Fumsville College · Oct 2021 – Nov 2022</div><ul class="clean"><li>Designed and delivered science lessons and practical experiments aligned with curriculum standards.</li><li>Maintained laboratory equipment and safety compliance.</li><li>Received the Excellence in Teaching Award and Fumsville College Excellence Award.</li></ul></div>
+  </div>
+ </div>
+</section>
 
-          <p>
-            I am a biomedical researcher with an MSc in Drug
-            Research and Development from the University of
-            Lagos, Nigeria. My academic interests centre on
-            understanding disease mechanisms and investigating
-            therapeutic approaches that can contribute to
-            better health outcomes.
-          </p>
+<section id="conferences">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">06 / Conferences</div><h2>Presentations & posters</h2></div>
+  <div class="grid">
+   <article class="card"><h3>Best Poster Presentation Award</h3><p>International Conference of Biochemistry</p><p>“Effects of Momordica charantia (Bitter Lemon) on Ischemic Diabetic Myocardium.”</p></article>
+   <article class="card"><h3>CPHIA 2023 Poster</h3><p>3rd International Conference on Public Health in Africa</p><p>“Effects of Garlic Extract on TNF-α Expression and Oxidative Stress Status in the Kidney of Rats with STZ + Nicotinamide-Induced Diabetes.”</p></article>
+   <article class="card"><h3>Anti-Diabetic Activity of Stigmasterol</h3><p>“Anti-Diabetic Activity of Stigmasterol from Soybean Oil by Targeting the GLUT-4 Glucose Transporter.”</p></article>
+   <article class="card"><h3>Diabetic Cardiomyopathy</h3><p>“Silymarin Ameliorates Diabetic Cardiomyopathy via Inhibiting TGF-β1/SMAD Signalling.”</p></article>
+  </div>
+ </div>
+</section>
 
-          <br>
+<section id="skills">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">07 / Capabilities</div><h2>Technical & research skills</h2></div>
+  <div class="grid">
+   <article class="card"><h3>Laboratory methods</h3><p>GC-MS, spectrophotometry, PCR, Western blotting, in vivo animal modelling and histopathology.</p></article>
+   <article class="card"><h3>Clinical diagnostics</h3><p>Haematology, serology, blood banking, cross-matching, antibody screening and ABO/Rh typing.</p></article>
+   <article class="card"><h3>Research practice</h3><p>Statistical analysis, research methodology, experimental research and scientific communication.</p></article>
+   <article class="card"><h3>Digital tools</h3><p>Microsoft Word, Excel and PowerPoint.</p></article>
+  </div>
+ </div>
+</section>
 
-          <p>
-            My master's research examined the effects of
-            plant-derived therapeutics on oxidative stress
-            biomarkers and histopathological alterations in a
-            model of type 2 diabetes. This experience
-            strengthened my interest in metabolic disease,
-            experimental research and translational medicine.
-          </p>
+<section id="development">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">08 / Professional development</div><h2>Certifications & training</h2></div>
+  <div class="grid">
+   <article class="card"><h3>Precision Medicine</h3><p>University of Geneva · Coursera, 2024</p></article>
+   <article class="card"><h3>Statistics and Data Analysis in Public Health</h3><p>Imperial College London · Coursera, 2024</p></article>
+   <article class="card"><h3>Understanding Clinical Research: Behind the Statistics</h3><p>University of Cape Town · Coursera, 2024</p></article>
+   <article class="card"><h3>Introduction to Drug Discovery and Development</h3><p>Udemy, 2024</p></article>
+   <article class="card"><h3>Financial Modelling Workshop</h3><p>Udemy, 2024</p></article>
+   <article class="card"><h3>Basic Life Support (BLS) Certification</h3><p>Postgraduate Institute of Medicine, 2024</p></article>
+   <article class="card"><h3>Use of Epidemic Intelligence Systems for Pandemic Preparedness</h3><p>OpenWHO.org · WHO Health Emergencies Programme, 2024</p></article>
+   <article class="card"><h3>Monitoring and Evaluation of National Action Plans on Antimicrobial Resistance</h3><p>OpenWHO.org · WHO Health Emergencies Programme, 2024</p></article>
+   <article class="card"><h3>Data Analytics, UI/UX and Machine Learning</h3><p>Udemy, 2024</p></article>
+   <article class="card"><h3>Complete Python and Machine Learning in Financial Analysis</h3><p>Udemy, 2024</p></article>
+   <article class="card"><h3>Lifestyle Management and Pharmacological Treatment Options for People with Diabetes and Chronic Kidney Disease</h3><p>American Diabetes Association, 2026</p></article>
+   <article class="card"><h3>Engage to Empower: Screening, Diagnosis and Staging of Chronic Kidney Disease</h3><p>American Diabetes Association, 2026</p></article>
+  </div>
+ </div>
+</section>
 
-          <br>
+<section id="awards">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">09 / Recognition</div><h2>Awards & affiliations</h2></div>
+  <div class="grid">
+   <article class="card"><h3>Awards & honours</h3><ul class="clean"><li>Outstanding Researcher Award — International Journal of Advanced Biological and Biomedical Research (2023)</li><li>Best Poster Presentation Award — International Conference of Biochemistry</li><li>Excellence in Teaching Award — Ministry of Education</li><li>Fumsville College Excellence Award</li></ul></article>
+   <article class="card"><h3>Professional affiliations</h3><ul class="clean"><li>American Society for Microbiology</li><li>Nigerian Society of Biochemistry and Molecular Biology</li><li>Genetics Society of America</li><li>British Society for Antimicrobial Chemotherapy</li></ul></article>
+  </div>
+ </div>
+</section>
 
-          <p>
-            I am interested in pursuing further research
-            training and collaborating with scientists working
-            to understand chronic diseases at the molecular
-            and cellular levels.
-          </p>
-        </div>
+<section id="contact">
+ <div class="wrap">
+  <div class="contact-panel">
+   <div class="kicker">10 / Contact</div>
+   <h2>Let's connect</h2>
+   <p>I welcome conversations with PhD supervisors, researchers and collaborators working in diabetes, molecular medicine, drug discovery, translational research and related biomedical fields.</p>
+   <div class="contact-links">
+    <a class="contact-link" href="mailto:Damilareoluwaseun54@gmail.com"><small>Email</small>Damilareoluwaseun54@gmail.com</a>
+    <a class="contact-link" href="tel:+2349073453591"><small>Phone</small>+234 907 345 3591</a>
+    <a class="contact-link" href="https://orcid.org/0009-0004-3105-7250" target="_blank" rel="noopener"><small>Researcher ID</small>ORCID Profile ↗</a>
+    <a class="contact-link" href="https://scholar.google.com/citations?user=5dHjh2EAAAAJ&hl=en" target="_blank" rel="noopener"><small>Publications</small>Google Scholar ↗</a>
+    <a class="contact-link" href="https://github.com/damilareoluwaseun54-bit/Yussufmubaraq" target="_blank" rel="noopener"><small>Website source</small>GitHub Repository ↗</a>
+    <a class="contact-link" href="cv.pdf" target="_blank" rel="noopener"><small>Academic CV</small>View or download PDF ↓</a>
+   </div>
+   <p class="meta" style="color:#c5d6e3;margin-top:22px">Lagos Island, Lagos, Nigeria · References available upon request.</p>
+  </div>
+ </div>
+</section>
+</main>
 
-        <div class="card">
-          <h3>Research Profile</h3>
-          <p><strong>Degree:</strong> MSc</p>
-          <p><strong>Field:</strong> Drug Research and Development</p>
-          <p><strong>Institution:</strong> University of Lagos</p>
-          <p><strong>Location:</strong> Nigeria</p>
-
-          <div class="tag-list">
-            <span class="tag">Diabetes</span>
-            <span class="tag">Immunology</span>
-            <span class="tag">Molecular Medicine</span>
-            <span class="tag">Inflammation</span>
-            <span class="tag">Drug Discovery</span>
-            <span class="tag">Translational Research</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container" id="research">
-      <h2 class="section-title">Research Interests</h2>
-      <p class="section-intro">
-        Scientific questions that motivate my work.
-      </p>
-
-      <div class="research-grid">
-
-        <article class="card research-card">
-          <h3>Diabetes and Metabolic Disease</h3>
-          <p>
-            Investigating the molecular pathways associated
-            with diabetes, metabolic dysfunction, oxidative
-            stress and potential therapeutic interventions.
-          </p>
-        </article>
-
-        <article class="card research-card">
-          <h3>Inflammation and Immunology</h3>
-          <p>
-            Exploring immune responses, inflammatory
-            signalling and their contributions to chronic
-            disease development and progression.
-          </p>
-        </article>
-
-        <article class="card research-card">
-          <h3>Molecular and Translational Medicine</h3>
-          <p>
-            Connecting laboratory discoveries with the
-            development of evidence-based approaches to
-            disease prevention, diagnosis and treatment.
-          </p>
-        </article>
-
-        <article class="card research-card">
-          <h3>Therapeutics and Drug Discovery</h3>
-          <p>
-            Examining potential therapeutic compounds,
-            biological mechanisms and approaches for
-            improving treatment strategies.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-    <section class="container" id="education">
-      <h2 class="section-title">Education</h2>
-      <p class="section-intro">
-        My academic background.
-      </p>
-
-      <div class="card">
-        <div class="timeline">
-
-          <div class="timeline-item">
-            <div class="small-label">Postgraduate Education</div>
-            <h3>MSc in Drug Research and Development</h3>
-            <p>University of Lagos, Nigeria</p>
-            <p>
-              Research focus: plant-derived therapeutics,
-              oxidative stress biomarkers and histopathological
-              changes in a type 2 diabetes model.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="small-label">Undergraduate Education</div>
-            <h3>Bachelor's Degree</h3>
-            <p>
-              Add your exact degree title, university,
-              graduation year and undergraduate research topic.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="container" id="publications">
-      <h2 class="section-title">Publications & Research Projects</h2>
-      <p class="section-intro">
-        Selected scholarly contributions and research experience.
-      </p>
-
-      <div class="card">
-        <h3>Research Publications</h3>
-        <p>
-          Add your verified journal articles here, including
-          each article's title, co-authors, journal name,
-          publication year and DOI or publisher link.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Master's Research Project</h3>
-        <p>
-          Effects of plant-derived therapeutics on oxidative
-          stress biomarkers and histopathological alterations
-          in a type 2 diabetes model.
-        </p>
-        <p>
-          Add a brief summary of your methods, principal
-          findings and scientific contribution.
-        </p>
-      </div>
-    </section>
-
-    <section class="container" id="goals">
-      <h2 class="section-title">Research Vision</h2>
-
-      <div class="card">
-        <h3>From Laboratory Research to Public Health Impact</h3>
-
-        <p>
-          My long-term vision is to contribute to research
-          and education that improve our understanding of
-          diabetes and other chronic diseases, particularly
-          in settings where research capacity and access to
-          preventive healthcare need further development.
-        </p>
-
-        <br>
-
-        <p>
-          I hope to build collaborations across molecular
-          biology, immunology, therapeutics and public health,
-          with the broader goal of translating scientific
-          discoveries into meaningful health benefits.
-        </p>
-      </div>
-    </section>
-
-    <section class="container" id="contact">
-      <div class="contact">
-        <h2>Let's Connect</h2>
-
-        <p>
-          I welcome opportunities for academic collaboration,
-          research discussions and postgraduate research
-          opportunities in biomedical and translational science.
-        </p>
-
-        <p>
-          Email:
-          <a href="mailto:YOUR-EMAIL@example.com">
-            YOUR-EMAIL@example.com
-          </a>
-        </p>
-
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/" target="_blank"
-             rel="noopener noreferrer">
-            Add your LinkedIn profile
-          </a>
-        </p>
-
-        <p>
-          ORCID:
-          <a href="https://orcid.org/" target="_blank"
-             rel="noopener noreferrer">
-            Add your ORCID profile
-          </a>
-        </p>
-
-        <p>
-          Google Scholar:
-          <a href="https://scholar.google.com/" target="_blank"
-             rel="noopener noreferrer">
-            Add your Google Scholar profile
-          </a>
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>
-      &copy; 2026 Yussuf Mubaraq Damilare.
-      Academic and Research Portfolio.
-    </p>
-  </footer>
-
+<footer>
+ <p>© <span id="year">2026</span> Yussuf Mubaraq Damilare · Academic Research Portfolio</p>
+ <p>Built to share research, scholarly work and opportunities for collaboration.</p>
+</footer>
 </body>
 </html>
