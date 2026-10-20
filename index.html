@@ -1,0 +1,524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic and research portfolio of Yussuf Mubaraq Damilare, a biomedical researcher interested in diabetes, molecular medicine, and translational research.">
+  <title>Yussuf Mubaraq Damilare | Biomedical Researcher</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #263247;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .navbar {
+      background: #10243b;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #e1e9f3;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: #64d8c5;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #10243b, #17566a);
+      color: white;
+      padding: 90px 8%;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: #70e0cb;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.2;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: #e3edf4;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 23px;
+      border-radius: 6px;
+      background: #64d8c5;
+      color: #10243b;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button-outline {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+
+    .section-title {
+      color: #123e56;
+      font-size: 29px;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      color: #617086;
+      margin-bottom: 25px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 27px;
+      box-shadow: 0 5px 22px rgba(22, 45, 70, 0.06);
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      color: #17617a;
+      margin-bottom: 10px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      background: #e5f4f3;
+      color: #155767;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .research-card {
+      border-top: 4px solid #38b7a6;
+    }
+
+    .research-card p,
+    .card p {
+      color: #58677a;
+    }
+
+    .timeline {
+      border-left: 3px solid #38b7a6;
+      padding-left: 22px;
+      margin: 25px 0;
+    }
+
+    .timeline-item {
+      margin-bottom: 28px;
+    }
+
+    .timeline-item h3 {
+      color: #164a63;
+    }
+
+    .small-label {
+      font-size: 13px;
+      color: #168675;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      background: #10243b;
+      color: white;
+      border-radius: 14px;
+      padding: 35px;
+    }
+
+    .contact h2 {
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      color: #d8e4ee;
+      margin-bottom: 14px;
+    }
+
+    .contact a:not(.button) {
+      color: #70e0cb;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      background: #0b1929;
+      color: #b8c7d5;
+      padding: 25px 15px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        justify-content: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 65px 22px;
+      }
+
+      .about-grid,
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 40px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="#home">YM Damilare</a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="eyebrow">Biomedical Research · Molecular Medicine</div>
+
+    <h1>Yussuf Mubaraq Damilare</h1>
+
+    <p>
+      Exploring the molecular mechanisms of diabetes,
+      inflammation and chronic diseases to advance
+      translational research and improve human health.
+    </p>
+
+    <a class="button" href="#research">Explore My Research</a>
+    <a class="button button-outline" href="#contact">Get in Touch</a>
+  </header>
+
+  <main>
+
+    <section class="container" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">
+        My academic background, research interests and vision.
+      </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>My Research Journey</h3>
+
+          <p>
+            I am a biomedical researcher with an MSc in Drug
+            Research and Development from the University of
+            Lagos, Nigeria. My academic interests centre on
+            understanding disease mechanisms and investigating
+            therapeutic approaches that can contribute to
+            better health outcomes.
+          </p>
+
+          <br>
+
+          <p>
+            My master's research examined the effects of
+            plant-derived therapeutics on oxidative stress
+            biomarkers and histopathological alterations in a
+            model of type 2 diabetes. This experience
+            strengthened my interest in metabolic disease,
+            experimental research and translational medicine.
+          </p>
+
+          <br>
+
+          <p>
+            I am interested in pursuing further research
+            training and collaborating with scientists working
+            to understand chronic diseases at the molecular
+            and cellular levels.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Research Profile</h3>
+          <p><strong>Degree:</strong> MSc</p>
+          <p><strong>Field:</strong> Drug Research and Development</p>
+          <p><strong>Institution:</strong> University of Lagos</p>
+          <p><strong>Location:</strong> Nigeria</p>
+
+          <div class="tag-list">
+            <span class="tag">Diabetes</span>
+            <span class="tag">Immunology</span>
+            <span class="tag">Molecular Medicine</span>
+            <span class="tag">Inflammation</span>
+            <span class="tag">Drug Discovery</span>
+            <span class="tag">Translational Research</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="research">
+      <h2 class="section-title">Research Interests</h2>
+      <p class="section-intro">
+        Scientific questions that motivate my work.
+      </p>
+
+      <div class="research-grid">
+
+        <article class="card research-card">
+          <h3>Diabetes and Metabolic Disease</h3>
+          <p>
+            Investigating the molecular pathways associated
+            with diabetes, metabolic dysfunction, oxidative
+            stress and potential therapeutic interventions.
+          </p>
+        </article>
+
+        <article class="card research-card">
+          <h3>Inflammation and Immunology</h3>
+          <p>
+            Exploring immune responses, inflammatory
+            signalling and their contributions to chronic
+            disease development and progression.
+          </p>
+        </article>
+
+        <article class="card research-card">
+          <h3>Molecular and Translational Medicine</h3>
+          <p>
+            Connecting laboratory discoveries with the
+            development of evidence-based approaches to
+            disease prevention, diagnosis and treatment.
+          </p>
+        </article>
+
+        <article class="card research-card">
+          <h3>Therapeutics and Drug Discovery</h3>
+          <p>
+            Examining potential therapeutic compounds,
+            biological mechanisms and approaches for
+            improving treatment strategies.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="container" id="education">
+      <h2 class="section-title">Education</h2>
+      <p class="section-intro">
+        My academic background.
+      </p>
+
+      <div class="card">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="small-label">Postgraduate Education</div>
+            <h3>MSc in Drug Research and Development</h3>
+            <p>University of Lagos, Nigeria</p>
+            <p>
+              Research focus: plant-derived therapeutics,
+              oxidative stress biomarkers and histopathological
+              changes in a type 2 diabetes model.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="small-label">Undergraduate Education</div>
+            <h3>Bachelor's Degree</h3>
+            <p>
+              Add your exact degree title, university,
+              graduation year and undergraduate research topic.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="publications">
+      <h2 class="section-title">Publications & Research Projects</h2>
+      <p class="section-intro">
+        Selected scholarly contributions and research experience.
+      </p>
+
+      <div class="card">
+        <h3>Research Publications</h3>
+        <p>
+          Add your verified journal articles here, including
+          each article's title, co-authors, journal name,
+          publication year and DOI or publisher link.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Master's Research Project</h3>
+        <p>
+          Effects of plant-derived therapeutics on oxidative
+          stress biomarkers and histopathological alterations
+          in a type 2 diabetes model.
+        </p>
+        <p>
+          Add a brief summary of your methods, principal
+          findings and scientific contribution.
+        </p>
+      </div>
+    </section>
+
+    <section class="container" id="goals">
+      <h2 class="section-title">Research Vision</h2>
+
+      <div class="card">
+        <h3>From Laboratory Research to Public Health Impact</h3>
+
+        <p>
+          My long-term vision is to contribute to research
+          and education that improve our understanding of
+          diabetes and other chronic diseases, particularly
+          in settings where research capacity and access to
+          preventive healthcare need further development.
+        </p>
+
+        <br>
+
+        <p>
+          I hope to build collaborations across molecular
+          biology, immunology, therapeutics and public health,
+          with the broader goal of translating scientific
+          discoveries into meaningful health benefits.
+        </p>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <div class="contact">
+        <h2>Let's Connect</h2>
+
+        <p>
+          I welcome opportunities for academic collaboration,
+          research discussions and postgraduate research
+          opportunities in biomedical and translational science.
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:YOUR-EMAIL@example.com">
+            YOUR-EMAIL@example.com
+          </a>
+        </p>
+
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/" target="_blank"
+             rel="noopener noreferrer">
+            Add your LinkedIn profile
+          </a>
+        </p>
+
+        <p>
+          ORCID:
+          <a href="https://orcid.org/" target="_blank"
+             rel="noopener noreferrer">
+            Add your ORCID profile
+          </a>
+        </p>
+
+        <p>
+          Google Scholar:
+          <a href="https://scholar.google.com/" target="_blank"
+             rel="noopener noreferrer">
+            Add your Google Scholar profile
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 Yussuf Mubaraq Damilare.
+      Academic and Research Portfolio.
+    </p>
+  </footer>
+
+</body>
+</html>
